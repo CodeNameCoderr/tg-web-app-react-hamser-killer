@@ -2,7 +2,7 @@ const TelegramBot = require('node-telegram-bot-api');
 
 // replace the value below with the Telegram token you receive from @BotFather
 const token = '7000687042:AAHDYPElWpccd_gf-DVGHXcx8L1NyWtwPcU';
-const webAppUrl = "hamster-killer.netlify.app";
+const webAppUrl = "https://master--hamster-killer.netlify.app/";
 
 
 // Create a bot that uses 'polling' to fetch new updates
