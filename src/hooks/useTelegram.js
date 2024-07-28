@@ -3,6 +3,7 @@ let username = "Anonymous";
 
 try {
    username = tg.initDataUnsafe?.user.username
+   console.log(tg.initDataUnsafe?.user);
 }
 catch {
     username = "Anonymous";
