@@ -1,12 +1,18 @@
 const tg = window.Telegram.WebApp;
 let username = "Anonymous";
+let telegramId = "TempID";
 
 try {
-   username = tg.initDataUnsafe?.user.username
-   console.log(tg.initDataUnsafe?.user);
+   username = tg.initDataUnsafe?.user.username;
 }
 catch {
     username = "Anonymous";
+}
+
+try {
+    telegramId = tg.initDataUnsafe?.user.id;
+} catch{
+    telegramId = "TempID";
 }
 
 export function useTelegram() {
