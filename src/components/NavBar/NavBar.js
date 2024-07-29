@@ -4,6 +4,7 @@ import { GAME_ROUTE, TASK_LIST_ROUTE, ADMIN_ROUTE } from "../../utils/consts";
 import {Context} from "../../index";
 import React, { useContext } from "react";
 import { observer } from "mobx-react-lite";
+import {NavLink} from "react-router-dom";
 
 
 
@@ -17,25 +18,25 @@ const NavBar = observer(() => {
             <div className="navBar_block">
             <div className="navBar_links">
             <div className="navBar_link_block">
-                <a href={ GAME_ROUTE } className="navBar_link_item">
+            <NavLink to={ GAME_ROUTE }  className="navBar_link_item">
                 <img src={playIcon} alt="playIcon" className="navBar_link_icon" />
-                Игра</a>
+                Игра</NavLink>
             </div>
             <div className="navBar_link_block">
-                <a href={TASK_LIST_ROUTE} className="navBar_link_item">
+            <NavLink to={ TASK_LIST_ROUTE }  className="navBar_link_item">
                 <img src={playIcon} alt="playIcon" className="navBar_link_icon" />
-                Задания</a>
+                Задания</NavLink>
             </div>
            
             <div className="navBar_link_block">
-                <a href={ADMIN_ROUTE} className="navBar_link_item">
+            <NavLink to={ ADMIN_ROUTE }  className="navBar_link_item">
                 <img src={playIcon} alt="playIcon" className="navBar_link_icon" />
-                Админ панель</a>
+                Админ панель</NavLink>
             </div>
             <div className="navBar_link_block">
-            <a href="" className="navBar_link_item">
+            <NavLink className="navBar_link_item">
                 <img src={playIcon} alt="playIcon" className="navBar_link_icon" />
-                Пригласить</a>
+                Пригласить</NavLink>
             </div>
         </div>
             </div>
