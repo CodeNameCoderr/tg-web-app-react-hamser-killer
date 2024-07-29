@@ -48,7 +48,7 @@ export default class TaskStore {
     }
 
 
-    get Tasks() {
+    get tasks() {
         return this._tasks;
     }
 }

@@ -20,11 +20,16 @@ class userController {
         if (candidate) {
             return next(ApiError.badRequest('Пользователь с таким telegramId уже существует'))
         } else {
+            const candidate = await User.findOne({where: {username}});
+            if (candidate) {
+                return next(ApiError.badRequest('Пользователь с таким userName уже существует'))
+            }  else {
 
         const user = await User.create({telegramID, username, role});
 
         const token = generateJwt(user.id, user.telegramID, user.username, user.role);
         return res.json({token});
+            }
     }
 
     }

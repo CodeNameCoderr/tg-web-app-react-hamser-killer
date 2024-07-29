@@ -7,7 +7,7 @@ const User = sequelize.define ('user', {
     id: {type: DataTypes.INTEGER, primaryKey: true, autoIncrement: true},
     telegramID: {type: DataTypes.STRING, unique: true, allowNull: false},
     userAvatar: {type: DataTypes.STRING, unique: false, allowNull: false, defaultValue: path.resolve(__dirname, '..', 'static', "Default")},
-    username: {type: DataTypes.STRING, unique: false, allowNull: false},
+    username: {type: DataTypes.STRING, unique: true, allowNull: false},
     balance: {type: DataTypes.INTEGER, unique: false, defaultValue: '0'},
     level: {type: DataTypes.INTEGER, unique: false, defaultValue: '0'},
     energy: {type: DataTypes.INTEGER, unique: false, defaultValue: '7000'},

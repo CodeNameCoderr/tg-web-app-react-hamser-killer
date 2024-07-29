@@ -1,5 +1,6 @@
 export const ADMIN_ROUTE = '/admin'
-export const LOGIN_ROUTE = '/login'
-export const REGISTRATION_ROUTE = '/registration'
+export const LOGIN_ROUTE = '/auth'
+export const REGISTRATION_ROUTE = '/'
+export const TASK_LIST_ROUTE = '/tasks'
 export const TASK_ROUTE = '/task'
 export const GAME_ROUTE = '/game'

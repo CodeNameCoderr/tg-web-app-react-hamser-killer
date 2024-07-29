@@ -17,8 +17,8 @@ function App() {
 
   return (
     <BrowserRouter className="App">
-      <NavBar />
       <AppRouter/>
+      <NavBar />
     </BrowserRouter>
   );
 }
