@@ -48,12 +48,9 @@ class userController {
 
 
     async check(req, res, next) {
-        try{
+       
             const token = generateJwt(req.user.id, req.user.telegramID, req.user.username, req.user.role)
             return res.json({token})
-        } catch(e) {
-            res.status(401).json({message: "Токена нет"})
-        }
     }
 }
 
