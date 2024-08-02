@@ -1,0 +1,53 @@
+.check{
+    background-color: var(--tg-theme-button-color);
+    color: var(--tg-theme-text-color);
+}
+
+.navBar_block{
+    position: sticky;
+    bottom: 20px;
+    display: flex;
+    height: 10vh;
+    width: 100%;
+    justify-content: center;
+}
+
+.navBar_links{
+    width: 100%;
+    border-radius: 10px;
+    background-color: #1C1C1C;
+    display: flex;
+    justify-content: space-around;
+}
+
+.navBar_link_block{
+    height: 100%;
+    display: flex;
+    width: 25%;
+    flex-direction: column;
+    align-content: center;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.navBar_link_icon{
+    width: 35px;
+}
+
+.navBar_link_item{
+    padding: 10px;
+    font-size: 1.6vh;
+    text-align: center;
+    text-decoration: none;
+    color: white;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.unAuthorised{
+    color:red;
+}
